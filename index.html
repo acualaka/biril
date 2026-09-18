@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Surprise 💗</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#593d48;
+
+    background:
+        radial-gradient(circle at 15% 10%,#ffe1eb,transparent 30%),
+        radial-gradient(circle at 85% 90%,#f8d7e2,transparent 30%),
+        linear-gradient(135deg,#fff8f5,#fdebf1);
+
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:60px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+h1,h2{
+    font-family:'Cormorant Garamond',serif;
+}
+
+h1{
+    font-size:60px;
+    line-height:1.1;
+}
+
+h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.small{
+    font-size:13px;
+    opacity:.7;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+
+    border:0;
+    border-radius:30px;
+
+    background:#d97899;
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(180,90,120,.25);
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-card{
+    padding:40px 20px;
+}
+
+.intro-card h1{
+    color:#c45f83;
+}
+
+.intro-card p{
+    margin-top:12px;
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+.card{
+    width:100%;
+    max-width:450px;
+
+    margin:auto;
+    padding:40px 30px;
+
+    background:rgba(255,255,255,.6);
+
+    border:1px solid rgba(255,255,255,.8);
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(120,70,90,.12);
+
+    backdrop-filter:blur(12px);
+}
+
+input{
+    width:100%;
+
+    margin-top:20px;
+    padding:14px 18px;
+
+    border:1px solid #eccbd5;
+    border-radius:15px;
+
+    outline:none;
+
+    background:white;
+
+    font-family:'Poppins',sans-serif;
+    text-align:center;
+}
+
+#error{
+    margin-top:12px;
+    color:#c04e70;
+    font-size:13px;
+}
+
+
+/* =========================
+   BIRTHDAY
+========================= */
+
+.birthday-title{
+    color:#c45f83;
+    font-size:70px;
+}
+
+.cake{
+    font-size:80px;
+    margin:20px 0;
+
+    animation:cakeFloat 2s ease-in-out infinite;
+}
+
+@keyframes cakeFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+/* =========================
+   FLOWERS
+========================= */
+
+#flowers{
+    flex-direction:column;
+}
+
+
+/* =========================
+   BOUQUET
+========================= */
+
+.bouquet{
+    position:relative;
+
+    width:340px;
+    height:440px;
+
+    margin:20px auto 0;
+}
+
+
+/* =========================
+   BATANG
+========================= */
+
+.stem{
+    position:absolute;
+
+    width:6px;
+    height:265px;
+
+    left:50%;
+    bottom:55px;
+
+    transform-origin:bottom center;
+
+    background:linear-gradient(
+        to right,
+        #416d49,
+        #79a66e
+    );
+
+    border-radius:10px;
+
+    z-index:1;
+}
+
+.stem1{
+    transform:translateX(-50%) rotate(-18deg);
+}
+
+.stem2{
+    transform:translateX(-50%) rotate(-9deg);
+}
+
+.stem3{
+    transform:translateX(-50%) rotate(0deg);
+}
+
+.stem4{
+    transform:translateX(-50%) rotate(9deg);
+}
+
+.stem5{
+    transform:translateX(-50%) rotate(18deg);
+}
+
+
+/* =========================
+   DAUN
+========================= */
+
+.leaf{
+    position:absolute;
+
+    width:78px;
+    height:40px;
+
+    background:linear-gradient(
+        135deg,
+        #8aae7b,
+        #477854
+    );
+
+    border-radius:100% 0 100% 0;
+
+    z-index:3;
+}
+
+.leaf1{
+    left:42px;
+    bottom:145px;
+    transform:rotate(-35deg);
+}
+
+.leaf2{
+    left:72px;
+    bottom:105px;
+    transform:rotate(20deg);
+}
+
+.leaf3{
+    right:42px;
+    bottom:145px;
+    transform:rotate(215deg);
+}
+
+.leaf4{
+    right:72px;
+    bottom:105px;
+    transform:rotate(160deg);
+}
+
+
+/* =========================
+   PEONY
+========================= */
+
+.peony{
+    position:absolute;
+
+    width:125px;
+    height:125px;
+
+    z-index:7;
+
+    opacity:0;
+
+    animation:
+        peonyAppear 1s ease-out forwards;
+}
+
+
+/*
+        🌸
+     🌸 🌸 🌸
+        🌸
+*/
+
+.peony1{
+    left:12px;
+    top:105px;
+
+    transform:scale(.78);
+
+    animation-delay:.1s;
+}
+
+.peony2{
+    left:65px;
+    top:48px;
+
+    transform:scale(.88);
+
+    animation-delay:.3s;
+}
+
+.peony3{
+    left:108px;
+    top:100px;
+
+    transform:scale(.92);
+
+    animation-delay:.5s;
+}
+
+.peony4{
+    right:12px;
+    top:105px;
+
+    transform:scale(.78);
+
+    animation-delay:.7s;
+}
+
+.peony5{
+    left:108px;
+    top:8px;
+
+    transform:scale(.78);
+
+    animation-delay:.9s;
+}
+
+
+/* =========================
+   PEONY PETALS
+========================= */
+
+.peony-petal{
+    position:absolute;
+
+    width:66px;
+    height:80px;
+
+    left:50%;
+    top:50%;
+
+    transform-origin:50% 100%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff0f4,
+            #f5b1c6 50%,
+            #d9789b
+        );
+
+    border-radius:
+        65% 65% 55% 55%;
+
+    box-shadow:
+        inset 4px 5px 12px rgba(255,255,255,.7),
+        0 4px 9px rgba(100,50,70,.12);
+}
+
+
+.peony-petal:nth-child(1){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(0deg)
+        translateY(-25px);
+
+}
+
+.peony-petal:nth-child(2){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(60deg)
+        translateY(-25px);
+
+}
+
+.peony-petal:nth-child(3){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(120deg)
+        translateY(-25px);
+
+}
+
+.peony-petal:nth-child(4){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(180deg)
+        translateY(-25px);
+
+}
+
+.peony-petal:nth-child(5){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(240deg)
+        translateY(-25px);
+
+}
+
+.peony-petal:nth-child(6){
+
+    transform:
+        translate(-50%,-50%)
+        rotate(300deg)
+        translateY(-25px);
+
+}
+
+
+/* =========================
+   PEONY INNER
+========================= */
+
+.peony-inner{
+    position:absolute;
+
+    width:76px;
+    height:76px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff9fb 0%,
+            #ffdbe5 30%,
+            #efa2ba 70%,
+            #d87598 100%
+        );
+
+    z-index:8;
+
+    box-shadow:
+        inset 3px 5px 12px rgba(255,255,255,.8);
+}
+
+
+.peony-inner::before,
+.peony-inner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:35px;
+    height:45px;
+
+    left:50%;
+    top:50%;
+
+    transform-origin:50% 100%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff8fa,
+            #f4afc3
+        );
+
+    border-radius:70% 70% 50% 50%;
+
+}
+
+.peony-inner::before{
+
+    transform:
+        translate(-50%,-65%)
+        rotate(45deg);
+
+}
+
+.peony-inner::after{
+
+    transform:
+        translate(-50%,-65%)
+        rotate(-45deg);
+
+}
+
+
+/* =========================
+   PEONY CENTER
+========================= */
+
+.peony-center{
+    position:absolute;
+
+    width:15px;
+    height:15px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#f3c96f;
+
+    border-radius:50%;
+
+    z-index:12;
+
+    box-shadow:
+        0 0 0 5px rgba(255,215,140,.3);
+}
+
+
+/* =========================
+   FLOWER ANIMATION
+========================= */
+
+@keyframes peonyAppear{
+
+    0%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+/* =========================
+   WRAPPING PAPER
+========================= */
+
+.wrapper{
+
+    position:absolute;
+
+    left:50%;
+    bottom:5px;
+
+    transform:translateX(-50%);
+
+    width:215px;
+    height:135px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf7,
+            #f4d6da
+        );
+
+    clip-path:
+        polygon(
+            2% 0,
+            98% 0,
+            78% 100%,
+            22% 100%
+        );
+
+    z-index:9;
+
+    box-shadow:
+        0 10px 25px rgba(100,50,70,.15);
+}
+
+
+/* PAPER FOLD */
+
+.wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:0;
+
+    width:2px;
+    height:140px;
+
+    background:
+        rgba(200,150,165,.3);
+
+    transform:rotate(5deg);
+
+}
+
+
+/* =========================
+   RIBBON
+========================= */
+
+.ribbon{
+
+    position:absolute;
+
+    left:50%;
+    bottom:50px;
+
+    width:32px;
+    height:60px;
+
+    transform:translateX(-50%);
+
+    background:#d97899;
+
+    border-radius:5px;
+
+    z-index:15;
+
+}
+
+
+/* RIBBON LOOPS */
+
+.ribbon::before,
+.ribbon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+    height:45px;
+
+    top:3px;
+
+    background:#e59ab3;
+
+    border-radius:
+        80% 20% 80% 20%;
+
+}
+
+.ribbon::before{
+
+    right:14px;
+
+    transform:rotate(25deg);
+
+}
+
+.ribbon::after{
+
+    left:14px;
+
+    transform:
+        scaleX(-1)
+        rotate(25deg);
+
+}
+
+
+/* =========================
+   FLOWER TEXT
+========================= */
+
+.flower-text{
+
+    max-width:600px;
+
+    margin:0 auto;
+
+    padding:25px;
+
+    background:
+        rgba(255,255,255,.45);
+
+    border-radius:25px;
+
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+#memories{
+    flex-direction:column;
+}
+
+.memory-grid{
+
+    width:100%;
+    max-width:550px;
+
+    margin:25px auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.memory{
+
+    overflow:hidden;
+
+    aspect-ratio:1/1;
+
+    border-radius:20px;
+
+    background:#f4dfe5;
+
+    box-shadow:
+        0 10px 25px rgba(100,50,70,.12);
+
+}
+
+.memory img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.memory:hover img{
+    transform:scale(1.08);
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-card{
+
+    width:100%;
+    max-width:500px;
+
+    margin:auto;
+
+    padding:35px;
+
+    background:
+        rgba(255,255,255,.6);
+
+    border-radius:25px;
+
+    box-shadow:
+        0 20px 50px rgba(100,50,70,.12);
+
+}
+
+.music-icon{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   REASONS
+========================= */
+
+.reason-grid{
+
+    width:100%;
+    max-width:850px;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.reason{
+
+    padding:25px 18px;
+
+    background:
+        rgba(255,255,255,.58);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 10px 25px rgba(100,50,70,.08);
+
+    transition:.3s;
+
+}
+
+.reason:hover{
+    transform:translateY(-5px);
+}
+
+.reason span{
+
+    display:block;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+#final{
+    min-height:80vh;
+}
+
+.final-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:45px 30px;
+
+    background:
+        rgba(255,255,255,.55);
+
+    border-radius:30px;
+
+    box-shadow:
+        0 20px 50px rgba(100,50,70,.1);
+
+}
+
+.final-card h2{
+    color:#c45f83;
+}
+
+.signature{
+
+    margin-top:25px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    color:#c45f83;
+
+}
+
+
+/* =========================
+   HEARTS
+========================= */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    font-size:20px;
+
+    opacity:.5;
+
+    pointer-events:none;
+
+    animation:
+        floatHeart 7s linear infinite;
+
+    z-index:100;
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+        opacity:.6;
+    }
+
+    90%{
+        opacity:.4;
+    }
+
+    100%{
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:45px;
+    }
+
+    h2{
+        font-size:38px;
+    }
+
+    .birthday-title{
+        font-size:52px;
+    }
+
+    .bouquet{
+
+        transform:scale(.85);
+
+        transform-origin:
+            top center;
+
+        margin-bottom:-55px;
+
+    }
+
+    .memory-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .reason-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     INTRO
+===================================== -->
+
+<section id="intro">
+
+    <div class="container intro-card">
+
+        <p class="small">
+            A little surprise for
+        </p>
+
+        <!-- TUKAR NAMA DIA -->
+
+        <h1>
+            hani 💗
+        </h1>
+
+        <p>
+            I made something small for you...
+        </p>
+
+        <button
+            class="btn"
+            onclick="showSection('password')">
+
+            Open My Surprise 💌
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     PASSWORD
+===================================== -->
+
+<section
+    id="password"
+    style="display:none;">
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>
+                One Little Secret 🔐
+            </h2>
+
+            <p>
+                Enter the password to continue.
+            </p>
+
+            <p class="small">
+                Hint: Your birthday 🎂
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter password">
+
+            <button
+                class="btn"
+                onclick="checkPassword()">
+
+                Unlock 💗
+
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     BIRTHDAY
+===================================== -->
+
+<section
+    id="birthday"
+    style="display:none;">
+
+    <div class="container">
+
+        <p>
+            Today is a special day...
+        </p>
+
+        <!-- TUKAR NAMA DIA -->
+
+        <h1 class="birthday-title">
+
+            Happy Birthday<br>
+
+            Hani Syafiqah! 🎂
+
+        </h1>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <p>
+            I hope today brings you<br>
+            as much happiness as you bring to me. 💗
+        </p>
+
+        <button
+            class="btn"
+            onclick="showSection('flowers')">
+
+            I Have Something For You 🌸
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FLOWERS
+===================================== -->
+
+<section
+    id="flowers"
+    style="display:none;">
+
+    <div class="container">
+
+        <h2>
+            For You 🌸
+        </h2>
+
+        <p>
+            Kalau boleh, aku nak bagi kau<br>
+            bunga ni betul-betul.
+        </p>
+
+
+        <!-- =================================
+             5 PEONY BOUQUET
+        ================================== -->
+
+        <div class="bouquet">
+
+
+            <!-- BATANG -->
+
+            <div class="stem stem1"></div>
+            <div class="stem stem2"></div>
+            <div class="stem stem3"></div>
+            <div class="stem stem4"></div>
+            <div class="stem stem5"></div>
+
+
+            <!-- DAUN -->
+
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+
+
+            <!-- PEONY 1 -->
+
+            <div class="peony peony1">
+
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+
+                <div class="peony-inner"></div>
+
+                <div class="peony-center"></div>
+
+            </div>
+
+
+            <!-- PEONY 2 -->
+
+            <div class="peony peony2">
+
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+
+                <div class="peony-inner"></div>
+
+                <div class="peony-center"></div>
+
+            </div>
+
+
+            <!-- PEONY 3 -->
+
+            <div class="peony peony3">
+
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+
+                <div class="peony-inner"></div>
+
+                <div class="peony-center"></div>
+
+            </div>
+
+
+            <!-- PEONY 4 -->
+
+            <div class="peony peony4">
+
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+
+                <div class="peony-inner"></div>
+
+                <div class="peony-center"></div>
+
+            </div>
+
+
+            <!-- PEONY 5 -->
+
+            <div class="peony peony5">
+
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+                <div class="peony-petal"></div>
+
+                <div class="peony-inner"></div>
+
+                <div class="peony-center"></div>
+
+            </div>
+
+
+            <!-- WRAPPING PAPER -->
+
+            <div class="wrapper"></div>
+
+
+            <!-- RIBBON -->
+
+            <div class="ribbon"></div>
+
+
+        </div>
+
+
+        <div class="flower-text">
+
+            <p>
+                bila tengok balik bunga ni sesuai dan kena dengan kau. 🌷
+            </p>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="showSection('memories')">
+
+            Next 💗
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MEMORIES
+===================================== -->
+
+<section
+    id="memories"
+    style="display:none;">
+
+    <div class="container">
+
+        <h2>
+            Our Little Memories 📸
+        </h2>
+
+        <p>
+            walaupun 1 je gambar kita but dengan gambar ni la yang membuatkan aku ingat kau (kecuali nombor 2).
+        </p>
+
+        <div class="memory-grid">
+
+            <div class="memory">
+                <img
+                    src="hani1.jpg"
+                    alt="Memory 1">
+            </div>
+
+            <div class="memory">
+                <img
+                    src="hani2.jpg"
+                    alt="Memory 2">
+            </div>
+
+        </div>
+
+        <button
+            class="btn"
+            onclick="showSection('music')">
+
+            One More Thing 🎵
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MUSIC
+===================================== -->
+
+<section
+    id="music"
+    style="display:none;">
+
+    <div class="container">
+
+        <div class="music-card">
+
+            <div class="music-icon">
+                🎵
+            </div>
+
+            <h2>
+                song for you
+            </h2>
+
+            <!-- TUKAR TAJUK LAGU -->
+
+            <p>
+               
+            </p>
+
+            <!-- TUKAR ARTIST -->
+
+            <p class="small">
+                
+            </p>
+
+
+            <audio
+                id="song"
+                controls
+                style="
+                    width:100%;
+                    margin-top:20px;
+                ">
+
+                <source
+                    src="songi.mp3"
+                    type="audio/mpeg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+
+            <button
+                class="btn"
+                onclick="showSection('reasons')">
+
+                Continue 💗
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     REASONS
+===================================== -->
+
+<section
+    id="reasons"
+    style="display:none;">
+
+    <div class="container">
+
+        <h2>
+            Six Little Reasons 💗
+        </h2>
+
+        <p>
+            Why you're special to me.
+        </p>
+
+
+        <div class="reason-grid">
+
+
+            <div class="reason">
+
+                <span>🌸</span>
+
+                <p>
+                    Your smile always makes
+                    my day a little brighter.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <span>💗</span>
+
+                <p>
+                    Your voice is so cutee and makes me feel better.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <span>✨</span>
+
+                <p>
+                    I can always be myself
+                    around you.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <span>🌷</span>
+
+                <p>
+                    You have a beautiful
+                    heart which is always caring.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <span>🫶</span>
+
+                <p>
+                    everything about you.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <span>🥰</span>
+
+                <p>
+                    Simply because you're you.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="showSection('final')">
+
+            Last One 💌
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FINAL
+===================================== -->
+
+<section
+    id="final"
+    style="display:none;">
+
+    <div class="container">
+
+        <div class="final-card">
+
+            <h2>
+                Thank You 💗
+            </h2>
+
+            <p>
+                Thank you for being someone
+                so special in my life.
+            </p>
+
+            <p style="margin-top:15px;">
+
+                I hope this little surprise
+                makes you smile today.
+
+            </p>
+
+            <p style="margin-top:15px;">
+
+                Happy Birthday once again. 🎂🌸
+
+            </p>
+
+
+            <!-- TUKAR NAMA KAU -->
+
+            <div class="signature">
+
+                khairil comey
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+
+/* =====================================
+   PASSWORD
+===================================== */
+
+const PASSWORD = "20/9";
+
+
+function checkPassword(){
+
+    const input =
+        document.getElementById(
+            "passwordInput"
+        ).value;
+
+    const error =
+        document.getElementById(
+            "error"
+        );
+
+
+    if(input === PASSWORD){
+
+        error.textContent = "";
+
+        showSection("birthday");
+
+    }
+
+    else{
+
+        error.textContent =
+            "Password salah 😭 Cuba lagi.";
+
+    }
+
+}
+
+
+/* =====================================
+   SECTION NAVIGATION
+===================================== */
+
+function showSection(id){
+
+    const sections =
+        document.querySelectorAll("section");
+
+
+    sections.forEach(function(section){
+
+        section.style.display = "none";
+
+    });
+
+
+    const target =
+        document.getElementById(id);
+
+
+    target.style.display = "flex";
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* =====================================
+   ENTER PASSWORD
+===================================== */
+
+document
+    .getElementById("passwordInput")
+    .addEventListener(
+        "keydown",
+        function(event){
+
+            if(event.key === "Enter"){
+
+                checkPassword();
+
+            }
+
+        }
+    );
+
+
+/* =====================================
+   FLOATING HEARTS
+===================================== */
+
+function createHeart(){
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className = "heart";
+
+
+    heart.textContent =
+        Math.random() > .5
+        ? "💗"
+        : "♡";
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+
+    heart.style.fontSize =
+        (14 + Math.random() * 15) + "px";
+
+
+    document.body.appendChild(heart);
+
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },10000);
+
+}
+
+
+setInterval(
+    createHeart,
+    1200
+);
+
+
+</script>
+
+</body>
+</html>
